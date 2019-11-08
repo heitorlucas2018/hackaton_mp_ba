@@ -3859,4 +3859,15 @@ Created using IcoMoon - icomoon.io
     transition-timing-function: cubic-bezier(0.685, 0.0473, 0.346, 1);
     -webkit-overflow-scrolling: touch; } }
 
+
+  .fa, .fas {
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+  }
+  .flex-direction{
+    display: flex;
+    flex-direction: column;
+  }
+
 /*# sourceMappingURL=now-ui-dashboard.css.map */
