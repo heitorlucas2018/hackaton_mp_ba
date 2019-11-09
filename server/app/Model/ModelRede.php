@@ -19,13 +19,16 @@ class ModelRede extends Model
 
     public static function List()
     {
-
-        $query = DB::table(self::TABLES)
+        try {
+            $query = DB::table(self::TABLES)
                         ->select(self::COLUMNS)
                         ->get();
-        return ['success' =>true,
-                'results' => $query
-                ];
+            return ['success' =>true,
+                    'results' => $query ];
+        } catch (\Throwable $th) {
+            return  ['success' => false,
+                     'results' => 'Error list Rede :: '.$th->getMessage()];
+        }
     }
 
     public static function redeUpdate($data = [],$id = null)
@@ -45,6 +48,6 @@ class ModelRede extends Model
 
     public static function instituicoesStore()
     {
-        
+
     }
 }
