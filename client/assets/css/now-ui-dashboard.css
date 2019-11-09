@@ -1344,7 +1344,9 @@ body {
   font-size: 14px;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased; 
+  width: 100%;
+  height: 100%;}
 
 .main {
   position: relative;
@@ -2576,7 +2578,9 @@ Created using IcoMoon - icomoon.io
   height: 100vh; }
   .wrapper.wrapper-full-page {
     min-height: 100vh;
-    height: auto; }
+    height: auto; 
+    display: flex;
+  }
 
 .sidebar,
 .off-canvas-sidebar {
@@ -2660,7 +2664,7 @@ Created using IcoMoon - icomoon.io
         color: #FFFFFF; }
     .sidebar .nav li.active > a,
     .off-canvas-sidebar .nav li.active > a {
-      background-color: #FFFFFF;
+      background-color: #00233f;
       box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1); }
     .sidebar .nav p,
     .off-canvas-sidebar .nav p {
@@ -2801,10 +2805,10 @@ Created using IcoMoon - icomoon.io
     background: #f96332; }
   .sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]),
   .off-canvas-sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) {
-    color: #f96332; }
+    color: #FFF; }
     .sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) i,
     .off-canvas-sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) i {
-      color: #f96332; }
+      color: #fff; }
   .sidebar[data-color="red"]:after,
   .off-canvas-sidebar[data-color="red"]:after {
     background: #FF3636; }
@@ -2869,7 +2873,7 @@ Created using IcoMoon - icomoon.io
   padding-bottom: 45px;
   background: #141E30;
   /* fallback for old browsers */
-  background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
+  background: #00233f;
   position: relative;
   overflow: hidden; }
   .panel-header .header .title {
@@ -3865,9 +3869,95 @@ Created using IcoMoon - icomoon.io
     color: white;
     font-size: 20px;
   }
+  .flex{
+    display: flex;
+  }
+
+
   .flex-direction{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar-new{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    width: 114px;
+    left: 0;
+    z-index: 1030;
+    background-color: #f96638;
+  }
+
+  .background-fixo{
+  background: url('../../assets/img/home.png') center center no-repeat fixed; 
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:absolute;
+  display: flex;
+  justify-content: flex-end;
+  }
+
+  .background-cadastro{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  }
+
+  .texto-background{
+    display: flex;
+    align-items: flex-end;
+  }
+  .texto-background img{
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 35px 100px 0px;    
+  }
+
+  .texto-background p{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    padding: 75px;
+    font-weight: bold;
+  }
+
+  .sidebar-new--azul{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    width: 114px;
+    left: 0;
+    z-index: 1030;
+    background-color: #00233f;
+  }
+  .main-panel-new{
+    min-height: calc(100vh - 123px);
+    margin-top: -30px; 
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .content-new{
+    background-color: #00233f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
   }
 
 /*# sourceMappingURL=now-ui-dashboard.css.map */
