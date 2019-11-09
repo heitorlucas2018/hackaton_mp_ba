@@ -15,7 +15,18 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'v1', 'middleware' => 'api'], function() {
 
+    Route::post('login', 'ControllerAuth@auth');
+
     Route::resource('user','ControllerUser',['only' => ['index', 'store','show', 'update', 'destroy']]);
     Route::resource('instituicoes','ControllerInstituicoes',['only' => ['index', 'store', 'show', 'update', 'destroy']]);
+    Route::resource('rede','ControllerRede',['only' => ['index', 'store', 'show', 'update', 'destroy']]);
+
+    /*Rede
+        Route::post('Rede/insert','ControllerRede@insert');
+        Route::put('Rede/{id}/Update','ControllerRede@update');
+    **/
+
+    //Instituições
+        Route::post('Instituicoes/insert','ControllerInstituicoes@insert');
 
 });

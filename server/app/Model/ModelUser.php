@@ -13,11 +13,12 @@ class ModelUser extends Model
         'user_id',
         'user_name',
         'user_email',
+        'user_senha',
         'user_cpf',
         'user_contato',
         'user_num_inscricao',
         'user_nivel',
-        'setor_setor_id',
+        'setor_setor_id'
     ];
 
     public static function List()
@@ -30,22 +31,6 @@ class ModelUser extends Model
                 'results' => $query
                 ];
     }
-    public static function Auth($data = null)
-    {
-        $ret = false;
-        $query = DB::table('usuario')
-                        ->select(['id','login','senha'])
-                        ->where('login','=',$data['username'])
-                        ->where('senha','=',$data['password'])
-                        ->get();
-            if(count($query) != 0){
-                $data = '/'.$query[0]->login.'/'.$query[0]->senha.'/'.date('ddmmyy');
-                $k = md5($data);
-                $data = ['key' => $k];
-               $ret =  self::userUpdate($query[0]->id,$data);
-            }
-        return $ret;
-    }
     public static function AuthToken($key = null)
     {
             $query = DB::table('usuario')
@@ -57,14 +42,14 @@ class ModelUser extends Model
             else
                 return ['nivel'=>null,'res'=>$res];
     }
-    public static function userUpdate($id = null,$data = []){
-         DB::table('usuario')
-                ->where('id','=',$id)
+    public static function UpdateUser($token = null, $data = []){
+         DB::table(self::TABLES)
+                ->where('token','=',$token)
                 ->update($data);
-        return @$data['key'];
+        return true;
     }
-    public static function userIsert($data = []){
-        $res = DB::table('usuario')
+    public static function Create($data = []){
+        $res = DB::table(self::TABLES)
                ->insertGetId($data);
        return @res;
    }
