@@ -8,6 +8,10 @@ use DB;
 use App\Quotation;
 
 
+/**
+ *  @author heitor <heitor@gmail.com>
+ *
+ */
 class ModelRede extends Model
 {
     public $timestamps = false;

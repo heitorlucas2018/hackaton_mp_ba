@@ -5,6 +5,10 @@ namespace App\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ *  @author heitor <heitor@heitorl09@s>
+ *
+ */
 class ModelAuth extends Model
 {
     protected CONST TABLES  = 'user';

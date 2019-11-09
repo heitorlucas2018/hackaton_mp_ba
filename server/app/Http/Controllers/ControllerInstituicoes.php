@@ -13,56 +13,31 @@ class ControllerInstituicoes extends Controller
 
     }
 
-    /* 
+    /*
         Author: Ieleny
         Goal: Inserir a instituição apartir do form
     */
-    public function insert(Request $request)
-    {  
-
-        return response()->json(
-            [[
-                'result' => ModelInstituicoes::instituicoesInsert($request->input())
-            ]]
-        );
-    
+    public function insert(Request $rs)
+    {
+        return  ModelInstituicoes::instituicoesInsert($rs->input());
     }
 
-    /* 
+    /*
         Author: Ieleny
         Goal: Atualizar a instituição apartir do Form
     */
-    public function update(Request $request,$id)
-    {  
-        
-        return response()->json(
-            [[
-                'result' => ModelInstituicoes::update($request,$id)
-            ]]
-        );
+    public function update(Request $rs,$id)
+    {
+        return ModelInstituicoes::update($rs->input(),$id);
     }
 
-    /* 
+    /*
         Author: Ieleny
         Goal: Listar Instituições
     */
     public function list()
     {
-        return response()->json(
-            [[
-                'result' => ModelInstituicoes::all()
-            ]]
-        );
+        return ModelInstituicoes::List();
     }
 
-    /* 
-        Author: Ieleny
-        Goal: Desativar o registro na instituição
-    */
-    public function store()
-    {
-
-
-    }
-    
 }

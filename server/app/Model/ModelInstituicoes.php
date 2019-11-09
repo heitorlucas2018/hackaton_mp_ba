@@ -28,7 +28,6 @@ class ModelInstituicoes extends Model
 
     public static function List()
     {
-
         $query = DB::table(self::TABLES)
                         ->select(self::COLUMNS)
                         ->get();
@@ -39,17 +38,19 @@ class ModelInstituicoes extends Model
 
     public static function instituicoesUpdate($data = [],$id = null)
     {
-         DB::table(self::TABLES)
-                ->where('id','=',$id)
-                ->update($data);
-        return @$data['key'];
+        DB::table(self::TABLES)
+            ->where('intituicoes_id','=',$id)
+            ->update($data);
+        return ['success' =>true,
+                'results' => 'Instituição cadastrada.'];
     }
 
     public static function instituicoesInsert($data = [])
     {
-        $res = DB::table(self::TABLES)
+        $re = DB::table(self::TABLES)
                ->insertGetId($data);
-       return @res;
+        return ['success' =>true,
+                'results' => $re];
     }
-    
+
 }
