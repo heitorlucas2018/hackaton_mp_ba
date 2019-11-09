@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Rede
+Route::post('Rede/insert','ControllerRede@insert');
+Route::put('Rede/{id}/Update','ControllerRede@update');
+
+//Instituições
+Route::post('Instituicoes/insert','ControllerInstituicoes@insert');
+
