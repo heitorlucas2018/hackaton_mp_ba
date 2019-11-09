@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Model\ModelUser;
-use App\Model\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
 
 class ControllerUser extends Controller
 {
