@@ -4034,9 +4034,13 @@ Created using IcoMoon - icomoon.io
       background-color: #00233f;
     }
 
-    .texto-background-doubt h3, p{
+    .texto-background-doubt h3{
       color: white;
       margin: 4%; 
+    }
+
+    .texto-background-doubt h5 p{
+      color: white;
     }
 
     #marcador_dashboard{
@@ -4053,12 +4057,26 @@ Created using IcoMoon - icomoon.io
     .paragrafo{
       width: 80%;
       text-align: justify;
-      margin-left: 10%;
+      /* margin-left: 10%; */
     }
 
     .texto-background-dashboard{
       width: 200px;
       height: 200px;
+      margin: 325px 60px 0px 2px;
+      align-items: end;
+      display: flex;
     }
+
+    .texto-background-dashboard img{
+      display: flex;
+      
+
+    }
+    .texto-background-dashboard img, p{
+      display: flex;
+      position: absolute;
+    }
+
 
 /*# sourceMappingURL=now-ui-dashboard.css.map */
