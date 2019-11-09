@@ -24,7 +24,7 @@
   <div class="wrapper ">
     <div class="sidebar" data-color="orange">
       <div class="logo flex">
-          <a href="./dashboard.html" class="simple-text logo-normal">
+          <a href="/dashboard" class="simple-text logo-normal">
             <img src="../assets/img/logo.png" alt="" srcset="">
           </a>
           <i class="fas fa-bars " style="float: right; align-self: center; "></i>
@@ -32,37 +32,37 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
           <ul class="nav">
               <li >
-                <a href="./dashboard.html">
+                <a href="/dashboard">
                   <i class="now-ui-icons design_app"></i>
                   <p>Home</p>
                 </a>
               </li>
               <li class="active">
-                <a href="./login.html">
+                <a href="/login">
                   <i class="fas fa-chalkboard"></i>
                   <p>Cadastrar Relato</p>
                 </a>
               </li>
               <li>
-                <a href="./rede_protecao.html">
+                <a href="/rede_protecao">
                   <i class="fas fa-network-wired"></i>
                   <p>Rede de Proteção</p>
                 </a>
               </li>
               <li>
-                <a href="./map.html">
+                <a href="/map">
                   <i class="now-ui-icons location_map-big"></i>
                   <p>Mapa</p>
                 </a>
               </li>
               <li>
-                <a href="./about.html">
+                <a href="/about">
                   <i class="now-ui-icons users_single-02"></i>
                   <p>Sobre</p>
                 </a>
               </li>
               <li>
-                <a href="./doubt.html">
+                <a href="/doubt">
                   <i class="far fa-question-circle"></i>
                   <p>Dúvida</p>
                 </a>
@@ -72,7 +72,7 @@
     </div>
     <div class="main-panel-new" id="main-panel-new">
         <h5>Cadastrar Relato</h5>
-      <div class="content-new">
+      <div class="content-new"> 
         <div class="borda_background">
           <!-- <img class="background-cadastro" src="../assets/img/borda-cadastro.png" alt="" srcset=""> -->
         

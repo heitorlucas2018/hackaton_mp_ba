@@ -57,10 +57,10 @@ Route::get('about', function () {
 
 //Doubt 
 Route::get('doubt', function () {
-    return view('dashboard');
+    return view('doubt');
 });
 
 //Usuario 
 Route::get('user', function () {
-    return view('user');
+    return view('login');
 });

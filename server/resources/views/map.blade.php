@@ -34,47 +34,45 @@
           Creative Tim
         </a>
       </div>
-      <div class="sidebar" data-color="orange">
-        <!--
-          Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-      -->
-        <div class="logo">
-          <a href="/dashboard" class="simple-text logo-normal">
-            <img src="../assets/img/logo.png" alt="" srcset="">
-          </a>
-        </div>
-        <div class="sidebar-wrapper" id="sidebar-wrapper">
+      <div class="sidebar-wrapper" id="sidebar-wrapper">
           <ul class="nav">
-            <li>
-              <a href="/dashboard">
-                <i class="now-ui-icons design_app"></i>
-                <p>Home</p>
-              </a>
-            </li>
-            
-            <li> 
-              <a href="/map">
-                <i class="now-ui-icons location_map-big"></i>
-                <p>Mapa</p>
-              </a>
-            </li>
-            
-            <li class="active ">
-              <a href="/user">
-                <i class="now-ui-icons users_single-02"></i>
-                <p>Cadastrar Relato</p>
-              </a>
-            </li>
-  
-            <li class="active ">
-              <a href="/institution">
-                <i class="now-ui-icons users_single-02"></i>
-                <p>Cadastrar Instituição</p>
-              </a>
-            </li>
-            
+              <li >
+                <a href="/dashboard">
+                  <i class="now-ui-icons design_app"></i>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li>
+                <a href="/user">
+                  <i class="fas fa-chalkboard"></i>
+                  <p>Cadastrar Relato</p>
+                </a>
+              </li>
+              <li>
+                <a href="/rede_protecao">
+                  <i class="fas fa-network-wired"></i>
+                  <p>Rede de Proteção</p>
+                </a>
+              </li>
+              <li class="active">
+                <a href="/map">
+                  <i class="now-ui-icons location_map-big"></i>
+                  <p>Mapa</p>
+                </a>
+              </li>
+              <li>
+                <a href="/about">
+                  <i class="now-ui-icons users_single-02"></i>
+                  <p>Sobre</p>
+                </a>
+              </li>
+              <li>
+                <a href="/doubt">
+                  <i class="far fa-question-circle"></i>
+                  <p>Dúvida</p>
+                </a>
+              </li>
           </ul>
-        </div>
       </div>
     </div>
     <div class="main-panel" id="main-panel">
