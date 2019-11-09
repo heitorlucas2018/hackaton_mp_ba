@@ -25,6 +25,11 @@ Route::post('Instituicoes/insert','ControllerInstituicoes@insert');
 
 Route::post('Instituicoes/insert','ControllerInstituicoes@insert');
 
+//Login 
+Route::get('login', function () {
+    return view('login');
+});
+
 //Dashboard
 Route::get('dashboard', function () {
     return view('dashboard');
@@ -43,4 +48,19 @@ Route::get('rede_protecao', function () {
 //Instituição 
 Route::get('institution', function () {
     return view('institution');
+});
+
+//About 
+Route::get('about', function () {
+    return view('about');
+});
+
+//Doubt 
+Route::get('doubt', function () {
+    return view('dashboard');
+});
+
+//Usuario 
+Route::get('user', function () {
+    return view('user');
 });
