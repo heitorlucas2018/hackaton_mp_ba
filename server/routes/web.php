@@ -14,27 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-
-//Rede
-Route::post('Rede/insert','ControllerRede@insert');
-Route::put('Rede/{id}/Update','ControllerRede@update');
-
-//Instituições
-Route::post('Instituicoes/insert','ControllerInstituicoes@insert');
-
-Route::post('Instituicoes/insert','ControllerInstituicoes@insert');
-
-//Dashboard
-Route::get('dashboard', function () {
-    return view('dashboard');
-});
-
-//Rede Proteção
-Route::get('rede_Protecao', function () {
-    return view('rede_Protecao');
-});
-
-Route::get('map', function () {
-    return view('map');
-});
