@@ -30,11 +30,17 @@ Route::get('dashboard', function () {
     return view('dashboard');
 });
 
-//Rede Proteção
-Route::get('rede_Protecao', function () {
-    return view('rede_Protecao');
-});
-
+//Mapa
 Route::get('map', function () {
     return view('map');
+});
+
+//Rede Proteção
+Route::get('rede_protecao', function () {
+    return view('rede_protecao');
+});
+
+//Instituição 
+Route::get('institution', function () {
+    return view('institution');
 });

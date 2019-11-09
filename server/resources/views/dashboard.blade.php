@@ -38,13 +38,13 @@
             </a>
           </li>
           <li>
-            <a href="./user.html">
+            <a href="/user">
               <i class="fas fa-chalkboard"></i>
               <p>Cadastrar Relato</p>
             </a>
           </li>
           <li>
-            <a href="rede_Protecao">
+            <a href="/institution">
               <i class="fas fa-network-wired"></i>
               <p>Rede de Proteção</p>
             </a>
@@ -56,13 +56,13 @@
             </a>
           </li>
           <li>
-            <a href="./about.html">
+            <a href="/about">
               <i class="now-ui-icons users_single-02"></i>
               <p>Sobre</p>
             </a>
           </li>
           <li>
-            <a href="./doubt.html">
+            <a href="/doubt">
               <i class="far fa-question-circle"></i>
               <p>Dúvida</p>
             </a>

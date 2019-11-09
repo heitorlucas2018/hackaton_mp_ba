@@ -39,7 +39,7 @@
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
       -->
         <div class="logo">
-          <a href="./dashboard.html" class="simple-text logo-normal">
+          <a href="/dashboard" class="simple-text logo-normal">
             <img src="../assets/img/logo.png" alt="" srcset="">
           </a>
         </div>
@@ -51,50 +51,28 @@
                 <p>Home</p>
               </a>
             </li>
-            <!-- <li>
-              <a href="./icons.html">
-                <i class="now-ui-icons education_atom"></i>
-                <p>Icons</p>
-              </a>
-            </li> -->
+            
             <li> 
-              <a href="map">
+              <a href="/map">
                 <i class="now-ui-icons location_map-big"></i>
                 <p>Mapa</p>
               </a>
             </li>
-            <!-- <li>
-              <a href="./notifications.html">
-                <i class="now-ui-icons ui-1_bell-53"></i>
-                <p>Notifications</p>
-              </a>
-            </li> -->
+            
             <li class="active ">
-              <a href="./user.html">
+              <a href="/user">
                 <i class="now-ui-icons users_single-02"></i>
                 <p>Cadastrar Relato</p>
               </a>
             </li>
   
             <li class="active ">
-              <a href="./institution.html">
+              <a href="/institution">
                 <i class="now-ui-icons users_single-02"></i>
                 <p>Cadastrar Instituição</p>
               </a>
             </li>
-            <!-- <li>
-              <a href="./tables.html">
-                <i class="now-ui-icons design_bullet-list-67"></i>
-                <p>Table List</p>
-              </a>
-            </li> -->
-            <!-- <li>
-              <a href="./typography.html">
-                <i class="now-ui-icons text_caps-small"></i>
-                <p>Typography</p>
-              </a>
-            </li> -->
-          
+            
           </ul>
         </div>
       </div>
