@@ -23,14 +23,11 @@
 <body class="user-profile">
   <div class="wrapper ">
     <div class="sidebar" data-color="orange">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-    -->
-    <div class="logo flex">
-        <a href="./dashboard.html" class="simple-text logo-normal">
-          <img src="../assets/img/logo.png" alt="" srcset="">
-        </a>
-        <i class="fas fa-bars " style="float: right; align-self: center; "></i>
+      <div class="logo flex">
+          <a href="./dashboard.html" class="simple-text logo-normal">
+            <img src="../assets/img/logo.png" alt="" srcset="">
+          </a>
+          <i class="fas fa-bars " style="float: right; align-self: center; "></i>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
           <ul class="nav">
@@ -41,7 +38,7 @@
                 </a>
               </li>
               <li class="active">
-                <a href="./user.html">
+                <a href="./login.html">
                   <i class="fas fa-chalkboard"></i>
                   <p>Cadastrar Relato</p>
                 </a>
@@ -74,96 +71,39 @@
       </div>
     </div>
     <div class="main-panel-new" id="main-panel-new">
-<!--       
-      <div class="panel-header panel-header-sm" style="background-color: #00233f;" >
-      </div> -->
+        <h5>Cadastrar Relato</h5>
       <div class="content-new">
-        <img class="background-cadastro" src="../assets/img/borda-cadastro.png" alt="" srcset="">
-        <!-- <div class="row">
-          <div class="col-md-12"> -->
-            <!-- <div class="card"> -->
-              <!-- <div class="card-header"> -->
-                <!-- <h5 class="title">Cadastro de Usuário</h5> -->
-              <!-- </div> -->
-              <!-- <div class="card-body"> -->
-                <!-- <form>
-                  <div class="row" style="position: relative;"> -->
-                    <!-- <div class="col-md-6 pr-1">
-                      <div class="form-group">
-                        <label>Instituição</label>
-                        <input type="text" class="form-control"  placeholder="Escola Municipal..." value="">
-                      </div>
-                    </div> -->
-                    <!-- <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">E-mail</label>
-                        <input type="email" class="form-control" placeholder="jose@...">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 pr-1">
-                      <div class="form-group">
-                        <label>Senha</label>
-                        <input type="text" class="form-control" placeholder="*******" value="">
-                      </div>
-                    </div> -->
-                    <!-- <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label>Sobrenome</label>
-                        <input type="text" class="form-control" placeholder="da Silva" value="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Endereço</label>
-                        <input type="text" class="form-control" placeholder="Rua / Nº / Bairro" value="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 pr-1">
-                      <div class="form-group">
-                        <label>Cidade</label>
-                        <input type="text" class="form-control" placeholder="Cidade" value="">
-                      </div>
-                    </div>
-                  </div> -->
-                </form>
-              <!-- </div> -->
-            <!-- </div>
-          </div>
-           -->
-        </div>
+        <div class="borda_background">
+          <!-- <img class="background-cadastro" src="../assets/img/borda-cadastro.png" alt="" srcset=""> -->
         
-      </div>
-      
-    </div>
-    <footer class="footer">
-        <div class="container-fluid">
-          <nav>
-            <ul>
-              <li>
-                Equipe: Nerd Defenders
-                </a>
-              </li>
-              <li>
-                <a href="http://presentation.creative-tim.com">
-                  2019
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright" id="copyright">
-            &copy;
-            <script>
-              document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-            </script>, Designed by Lea Gonçalves.
+          <form>
+            <div class="centralizador">
+              <h6><a href="./loign.html">Entrar </a> | <a href="./cadastro.html">Cadastrar </a></h6>
+              <div class="col-md-6 pr-1"> 
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">E-mail</label>
+                    <input type="email" class="form-control" placeholder="jose@...">
+                  </div>
+              </div>
+              <div class="col-md-6 pr-1" >
+                  <div class="form-group">
+                    <label>Senha</label>
+                    <input type="text" class="form-control" placeholder="*******" value="">
+                  </div>
+              </div>
+              <div class="col-md-6 pr-1" ></div>
+                <div class="form-group">
+                    <button class="col-md-6 pr-1">Acessar</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </footer>
+              
+            
+          </form>
+      </div>
+    </div>
+
   </div>
 
   <!--   Core JS Files   -->
