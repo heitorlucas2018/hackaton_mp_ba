@@ -49,7 +49,7 @@
               <p>Rede de Proteção</p>
             </a>
           </li>
-          <li  class="active ">
+          <li>
             <a href="./map.html">
               <i class="now-ui-icons location_map-big"></i>
               <p>Mapa</p>
@@ -61,7 +61,7 @@
               <p>Sobre</p>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="./doubt.html">
               <i class="far fa-question-circle"></i>
               <p>Dúvida</p>
@@ -70,58 +70,21 @@
         </ul>
       </div>
     </div>
-    <div class="main-panel" id="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <div class="navbar-toggle">
-              <button type="button" class="navbar-toggler">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </button>
-            </div>
-            <h3> <img class="marcador" src="../assets/img/marcador.png" alt="" srcset="">Georreferenciamento
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            
-            
-          </div>
-        </div>
-      </nav>
-      <!-- End Navbar -->
-      <div class="panel-header panel-header-sm">
-      </div>
-      <div class="content">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card ">
-              <div class="card-header ">
-                Google Maps
-              </div>
-              <div class="card-body ">
-                <div id="map" class="map"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Sidebar -->
+    <div class="main-panel texto-background-doubt " id="main-panel">
+          <h3> <img class="marcador" src="../assets/img/marcador.png" alt="" srcset="">Dúvidas</h3>
+          <h5>O que fazer, se eu visualizar um caso de agressão?</h5>
+          <p class="paragrafo">O projeto CIRANDA surge para suprir a necessidade de formalização da rede de proteção social da cidade, através de um modelo colaborativo, capaz de detectar os locais de maior demanda, além de um leque das possibilidades de respostas disponíveis. Através da CIRANDA buscamos contribuir para o fortalecimento, comunicação e agilidade no encaminhamento das diversas demandas sociais transversais a temática da infância e adolescência.<br>
+            A CIRANDA é  uma ferramenta que entrega duas possibilidades de uso, interligadas e complementares.</p>
     </div>
-  </div>
+  
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!--  Google Maps Plugin    -->
-  
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ-dP8vUhTqIagCBdUrWjKvSML5k-NEbU"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chart JS -->
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
@@ -133,7 +96,8 @@
   <script>
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
-      demo.initGoogleMaps();
+      demo.initDashboardPageCharts();
+
     });
   </script>
 </body>
