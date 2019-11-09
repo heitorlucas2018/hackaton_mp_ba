@@ -4078,5 +4078,9 @@ Created using IcoMoon - icomoon.io
       position: absolute;
     }
 
+    #remocao ul{
+      list-style-type: none;
+    }
+
 
 /*# sourceMappingURL=now-ui-dashboard.css.map */
